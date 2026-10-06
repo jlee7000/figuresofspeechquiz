@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Figures of Speech Quiz</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+  h1 { color: #333; }
+  .question { margin-bottom: 25px; padding-bottom: 10px; border-bottom: 1px solid #ddd; }
+  .correct { color: green; font-weight: bold; }
+  .incorrect { color: red; font-weight: bold; }
+  #scoreBox { margin-top: 30px; font-size: 20px; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>Figures of Speech Quiz</h1>
+<p>Select the correct definition for each term.</p>
+
+<form id="quizForm">
+
+  <!-- 1 -->
+  <div class="question">
+    <strong>1. Anthropomorphism</strong><br>
+    <label><input type="radio" name="q1" value="C"> Describing God in human characteristics</label><br>
+    <label><input type="radio" name="q1" value="A"> Describing God or humans with animal traits</label><br>
+    <label><input type="radio" name="q1" value="B"> Using opposite parts to represent the whole</label><br>
+    <label><input type="radio" name="q1" value="D"> Substituting one word to avoid another</label><br>
+    <label><input type="radio" name="q1" value="E"> Using exaggeration for emphasis</label>
+  </div>
+
+  <!-- 2 -->
+  <div class="question">
+    <strong>2. Circumlocution</strong><br>
+    <label><input type="radio" name="q2" value="A"> Substituting one word to avoid another</label><br>
+    <label><input type="radio" name="q2" value="B"> Understatement for emphasis</label><br>
+    <label><input type="radio" name="q2" value="C"> Giving human traits to objects</label><br>
+    <label><input type="radio" name="q2" value="D"> Subtle ridicule disguised as praise</label><br>
+    <label><input type="radio" name="q2" value="E"> Using opposite parts to represent the whole</label>
+  </div>
+
+  <!-- 3 -->
+  <div class="question">
+    <strong>3. Euphemism</strong><br>
+    <label><input type="radio" name="q3" value="A"> Less harsh way to say something unpleasant</label><br>
+    <label><input type="radio" name="q3" value="B"> Exaggeration for emphasis</label><br>
+    <label><input type="radio" name="q3" value="C"> Likening one object to another</label><br>
+    <label><input type="radio" name="q3" value="D"> Using a part to represent the whole</label><br>
+    <label><input type="radio" name="q3" value="E"> Describing God in human characteristics</label>
+  </div>
+
+  <!-- 4 -->
+  <div class="question">
+    <strong>4. Hyperbole</strong><br>
+    <label><input type="radio" name="q4" value="A"> Exaggeration for emphasis</label><br>
+    <label><input type="radio" name="q4" value="B"> Subtle ridicule disguised as praise</label><br>
+    <label><input type="radio" name="q4" value="C"> Substituting one word to avoid another</label><br>
+    <label><input type="radio" name="q4" value="D"> Opposite parts representing the whole</label><br>
+    <label><input type="radio" name="q4" value="E"> Understatement for emphasis</label>
+  </div>
+
+  <!-- 5 -->
+  <div class="question">
+    <strong>5. Hypocatastasis</strong><br>
+    <label><input type="radio" name="q5" value="A"> Directly naming one object as another (implied metaphor)</label><br>
+    <label><input type="radio" name="q5" value="B"> Exaggeration for emphasis</label><br>
+    <label><input type="radio" name="q5" value="C"> Describing God in human characteristics</label><br>
+    <label><input type="radio" name="q5" value="D"> More biting form of irony</label><br>
+    <label><input type="radio" name="q5" value="E"> Using a part to represent the whole</label>
+  </div>
+
+  <!-- 6 -->
+  <div class="question">
+    <strong>6. Irony</strong><br>
+    <label><input type="radio" name="q6" value="A"> Subtle ridicule disguised as a compliment</label><br>
+    <label><input type="radio" name="q6" value="B"> Exaggeration for emphasis</label><br>
+    <label><input type="radio" name="q6" value="C"> Animal traits applied to humans</label><br>
+    <label><input type="radio" name="q6" value="D"> Understatement for emphasis</label><br>
+    <label><input type="radio" name="q6" value="E"> More biting form of irony</label>
+  </div>
+
+  <!-- 7 -->
+  <div class="question">
+    <strong>7. Litotes</strong><br>
+    <label><input type="radio" name="q7" value="A"> Understatement for emphasis</label><br>
+    <label><input type="radio" name="q7" value="B"> Opposite parts representing the whole</label><br>
+    <label><input type="radio" name="q7" value="C"> Giving human traits to objects</label><br>
+    <label><input type="radio" name="q7" value="D"> Substituting one word to avoid another</label><br>
+    <label><input type="radio" name="q7" value="E"> Subtle ridicule disguised as praise</label>
+  </div>
+
+  <!-- 8 -->
+  <div class="question">
+    <strong>8. Merism</strong><br>
+    <label><input type="radio" name="q8" value="A"> Opposite parts representing the whole</label><br>
+    <label><input type="radio" name="q8" value="B"> More biting form of irony</label><br>
+    <label><input type="radio" name="q8" value="C"> Exaggeration for emphasis</label><br>
+    <label><input type="radio" name="q8" value="D"> Understatement for emphasis</label><br>
+    <label><input type="radio" name="q8" value="E"> Describing God in human characteristics</label>
+  </div>
+
+  <!-- 9 -->
+  <div class="question">
+    <strong>9. Metaphor</strong><br>
+    <label><input type="radio" name="q9" value="A"> Saying an object “is” another object</label><br>
+    <label><input type="radio" name="q9" value="B"> Opposite parts representing the whole</label><br>
+    <label><input type="radio" name="q9" value="C"> Subtle ridicule disguised as praise</label><br>
+    <label><input type="radio" name="q9" value="D"> Animal traits applied to humans</label><br>
+    <label><input type="radio" name="q9" value="E"> Substituting one word to avoid another</label>
+  </div>
+
+  <!-- 10 -->
+  <div class="question">
+    <strong>10. Personification</strong><br>
+    <label><input type="radio" name="q10" value="A"> Giving human traits to objects or animals</label><br>
+    <label><input type="radio" name="q10" value="B"> Exaggeration for emphasis</label><br>
+    <label><input type="radio" name="q10" value="C"> Understatement for emphasis</label><br>
+    <label><input type="radio" name="q10" value="D"> Opposite parts representing the whole</label><br>
+    <label><input type="radio" name="q10" value="E"> Describing God in human characteristics</label>
+  </div>
+
+  <!-- 11 -->
+  <div class="question">
+    <strong>11. Sarcasm</strong><br>
+    <label><input type="radio" name="q11" value="A"> More biting form of irony</label><br>
+    <label><input type="radio" name="q11" value="B"> Using a part to represent the whole</label><br>
+    <label><input type="radio" name="q11" value="C"> Less harsh way to say something unpleasant</label><br>
+    <label><input type="radio" name="q11" value="D"> Animal traits applied to humans</label><br>
+    <label><input type="radio" name="q11" value="E"> Exaggeration for emphasis</label>
+  </div>
+
+  <!-- 12 -->
+  <div class="question">
+    <strong>12. Simile</strong><br>
+    <label><input type="radio" name="q12" value="A"> Likening one object to another using “like” or “as”</label><br>
+    <label><input type="radio" name="q12" value="B"> Understatement for emphasis</label><br>
+    <label><input type="radio" name="q12" value="C"> Describing God in human characteristics</label><br>
+    <label><input type="radio" name="q12" value="D"> Opposite parts representing the whole</label><br>
+    <label><input type="radio" name="q12" value="E"> Subtle ridicule disguised as praise</label>
+  </div>
+
+  <!-- 13 -->
+  <div class="question">
+    <strong>13. Synecdoche</strong><br>
+    <label><input type="radio" name="q13" value="A"> Using a part to represent the whole or vice versa</label><br>
+    <label><input type="radio" name="q13" value="B"> Exaggeration for emphasis</label><br>
+    <label><input type="radio" name="q13" value="C"> More biting form of irony</label><br>
+    <label><input type="radio" name="q13" value="D"> Giving human traits to objects</label><br>
+    <label><input type="radio" name="q13" value="E"> Substituting one word to avoid another</label>
+  </div>
+
+  <!-- 14 -->
+  <div class="question">
+    <strong>14. Zoomorphism</strong><br>
+    <label><input type="radio" name="q14" value="A"> Describing God or humans with animal traits</label><br>
+    <label><input type="radio" name="q14" value="B"> Opposite parts representing the whole</label><br>
+    <label><input type="radio" name="q14" value="C"> Understatement for emphasis</label><br>
+    <label><input type="radio" name="q14" value="D"> Subtle ridicule disguised as praise</label><br>
+    <label><input type="radio" name="q14" value="E"> Saying an object “is” another object</label>
+  </div>
+
+</form>
+
+<button onclick="gradeQuiz()">Show Score</button>
+
+<div id="scoreBox"></div>
+
+<script>
+function gradeQuiz() {
+  const correctAnswers = {
+    q1: "C", q2: "A", q3: "A", q4: "A",
+    q5: "A", q6: "A", q7: "A", q8: "A",
+    q9: "A", q10: "A", q11: "A", q12: "A",
+    q13: "A", q14: "A"
+  };
+
+  let score = 0;
+
+  for (let q in correctAnswers) {
+    const selected = document.querySelector(`input[name="${q}"]:checked`);
+    const correct = correctAnswers[q];
+
+    if (selected && selected.value === correct) {
+      score++;
+      selected.parentElement.classList.add("correct");
+    } else if (selected) {
+      selected.parentElement.classList.add("incorrect");
+    }
+  }
+
+  document.getElementById("scoreBox").innerHTML =
+    "Your Score: " + score + " / 14";
+}
+</script>
+
+</body>
+</html>
